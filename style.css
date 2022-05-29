@@ -85,6 +85,21 @@ img {
 .container {
     padding: 3em 2.5em;
 }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: var(--ff);
+    font-size: var(--fs-p-tablet);
+    font-weight: var(--fw-b);
+    line-height: 3.2rem;
+    text-decoration: none;
+    border-radius: 1em;
+    margin: .4em;
+    padding: 1em 0;
+}
+
 /* General typography */
 h1 {
     font-family: var(--ff);
@@ -99,6 +114,7 @@ h2 {
     font-size: var(--fs-2-mobile);
     font-weight: var(--fw-b);
     line-height: var(--lh-h2-mobile);
+    color: var(--secondary-clr-w);
 }
 
 .p1 {
@@ -113,27 +129,129 @@ h2 {
     font-size: var(--fs-p-mobile);
     font-weight: var(--fw-r);
     line-height: var(--lh-p-mobile);
+    color: var(--secondary-clr-w);
 }
 
 /* Header */
 
 
 /* Intro */
+.intro {
+    padding-bottom: 15em;
+}
 .intro__header {
     margin-bottom: .6em;
 }
 
-/* App image */
+/* App illustration */
+.app-illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-clr-bk);
+    border-radius: 1em;
+}
+
+.app-illustration__bg-pattern {
+    width: 76%;
+}
+
+.app-img {
+    width: 56%;
+    display: block;
+    position: absolute;
+    margin: -9em 0em;
+}
+
+/* Action card section */
+.action-card {
+    display: block;
+    position: absolute;
+    margin: -4em 0;
+    background-color: var(--primary-clr-bo);
+    border-radius: 1em;
+    padding: 4em 3.5em;
+}
+
+.action-card__price {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-clr-w);
+    font-family: var(--ff);
+}
+
+.action-card p {
+    font-size: var(--fs-p-tablet);
+}
+
+
+.action-card span {
+    font-size: var(--fs-1-tablet);
+    line-height: var(--lh-h1-tablet);
+    font-weight: var(--fw-b);
+    margin: 0 1rem;
+}
+
+.action-card__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-card_ios-btn {
+    background-color: var(--secondary-clr-bk);
+    color: var(--secondary-clr-w);
+}
+
+.action-card_android-btn {
+    background-color: var(--secondary-clr-w);
+    color: var(--secondary-clr-bk);
+}
+
+.btn-icon {
+    width: 1.2em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 47em;
+    justify-self: center;
+}
+
+.footer-logo {
+    margin-bottom: 3em;
+}
+
+.footer__email {
+    text-decoration: none;
+    font-family: var(--ff);
+    font-size: var(--fs-p-mobile);
+    font-weight: var(--fw-b);
+    line-height: 1.5;
+    color: var(--secondary-clr-bk);
+    margin-bottom: 3em;
+}
+
+.social-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (min-width: 600px) {
     /* General styling */
-    .main__background-img {
-        /* width: 170%;
+    /* .main__background-img {
+        width: 170%;
         display: block;
         position: absolute;
-        margin: -30em -38em; */
+        margin: -30em -38em;
     }
-    
+     */
     .main__top-pattern {
         display: block;
         position: absolute;
@@ -174,12 +292,12 @@ h2 {
 
 @media (min-width: 900px) {
     /* General styling */
-    .main__background-img {
-        /* width: 150%;
+    /* .main__background-img {
+        width: 150%;
         display: block;
         position: absolute;
-        margin: -20em -20em; */
-    }
+        margin: -20em -20em;
+    } */
     
     
     /* General typography */
