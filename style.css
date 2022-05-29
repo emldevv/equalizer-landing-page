@@ -170,7 +170,11 @@ h2 {
     margin: -4em 0;
     background-color: var(--primary-clr-bo);
     border-radius: 1em;
-    padding: 4em 3.5em;
+    padding: 2.3em 3.5em 4em 3.5em;
+}
+
+.action-card__header {
+    margin: .7em 0;
 }
 
 .action-card__price {
@@ -178,6 +182,7 @@ h2 {
     align-items: center;
     color: var(--secondary-clr-w);
     font-family: var(--ff);
+    margin: 1.8em 0;
 }
 
 .action-card p {
