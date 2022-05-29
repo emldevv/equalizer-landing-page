@@ -4,30 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link 
+    rel="icon" 
+    type="image/png" 
+    sizes="32x32" 
+    href="./assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link 
+    rel="stylesheet" 
+    href="style.css">
   
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
 <body>
-
-  We make your music sound extraordinary.
-
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
-
-  Premium EQ
-
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
-
-  $4 / month
-
-  iOS Download
-  Android Download
-
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
+  <div class="container">
+    <header class="header"></header>
+    <div class="intro">
+      <h1 class="intro__header">We make your music sound extraordinary.</h1>
+      <p class="intro__para">
+        A system audio equalizer specifically designed for Android and iOS. Freely tune the
+        way your music sounds with a professional grade parametric EQ & volume mixer. Control
+        bass, mids, treble, gain control, reverb, and more!
+      </p>
+    </div>
+    <div class="action-card">
+      <h2 class="action-card__header">Premium EQ</h2>
+      Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take
+      your listening experience to a whole new level and access all our incredible features!
+      $4 / month
+      <a class="action-card_android-btn" href="#">iOS Download</a>
+      <a class="action-card_android-btn" href="#">Android Download</a>
+    </div>
+    <footer class="footer">
+      All rights reserved © Equalizer 2021
+      Have any problems? Contact us via social media or email us at equalizer@example.com
+    </footer>
+  </div>
 
 </body>
 </html>

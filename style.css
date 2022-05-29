@@ -1,0 +1,164 @@
+/* Reset properties */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+main,
+h1, h2, h3,
+p {
+    margin: 0;
+}
+
+  
+/* Custom Properties */
+  :root {
+    
+    font-size: 10px;
+    --fs-1-desktop: 8.8rem;                                 /* fs = font size */
+    --fs-1-tablet: 6.4rem;
+    --fs-1-mobile: 4.0rem;
+    --fs-2-desktop: 4.0rem;
+    --fs-2-mobile: 3.2rem;
+    --fs-p-desktop: 2.0rem;
+    --fs-p-tablet: 1.8rem;
+    --fs-p-mobile: 1.6rem;
+
+    --lh-h1-desktop: 8.8rem;                                 /* lh = line height */
+    --lh-h1-tablet: 6.4rem;
+    --lh-h1-mobile: 4.8rem;
+    --lh-h2-desktop: 5.2rem;
+    --lh-h2-tablet: 4.0rem;
+    --lh-h2-mobile: 4.0rem;
+    --lh-p-desktop: 3.4rem;
+    --lh-p-tablet: 2.8rem;
+    --lh-p-mobile: 2.6rem;
+
+    --ls-h1: -1px;                                  /* ls = letter spacing */
+
+    --ff: 'IBM Plex Sans', sans-serif;
+    --fw-r: 400;
+    --fw-b: 700;
+
+    
+    --primary-clr-cy: #66E2DC;          /* Cyan - active iOS button*/
+    --primary-clr-bo: #FA7453;          /* Burnt Orange - price card background*/
+    --primary-clr-oy: #FFB964;          /* Orange Yellow - active android button */
+
+    --secondary-clr-w: #FCFAF9;         /* white-ish - background, android button*/
+    --secondary-clr-bk: #191826;        /* Black-ish - section backgroun, iOS button*/
+  
+    --spacer: 1rem;
+    --spacer-md: calc(var(--spacer) * 2);
+    --spacer-lg: calc(var(--spacer) * 3);
+    
+    --shadow: 0 0 1em rgba(0,0,0, .25);
+    --br: 5px;
+    
+  }
+
+
+/* General styles */
+
+img {
+    max-width: 100%;
+}
+
+/* General typography */
+h1 {
+    font-family: var(--ff);
+    font-size: var(--fs-1-mobile);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-h1-mobile);
+    letter-spacing: var(--ls-h1);
+}
+
+h2 {
+    font-family: var(--ff);
+    font-size: var(--fs-2-mobile);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-h2-mobile);
+}
+
+.p1 {
+    font-family: var(--ff);
+    font-size: var(--fs-p-mobile);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-p-mobile);
+}
+
+.p2 {
+    font-family: var(--ff);
+    font-size: var(--fs-p-mobile);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-p-mobile);
+}
+
+
+
+@media (min-width: 600px) {
+    /* General typography */
+    h1 {
+        font-family: var(--ff);
+        font-size: var(--fs-1-tablet);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h1-tablet);
+        letter-spacing: var(--ls-h1);
+    }
+
+    h2 {
+        font-family: var(--ff);
+        font-size: var(--fs-2-tablet);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h2-tablet);
+    }
+
+    .p1 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-tablet);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-p-tablet);
+    }
+
+    .p2 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-tablet);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-p-tablet);
+    }
+}
+
+
+@media (min-width: 900px) {
+    /* General typography */
+h1 {
+    font-family: var(--ff);
+    font-size: var(--fs-1-desktop);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-h1-desktop);
+    letter-spacing: var(--ls-h1);
+}
+
+h2 {
+    font-family: var(--ff);
+    font-size: var(--fs-2-desk--fs-1-desktop);
+    font-weight: var(--fw-b);
+    line-height: var(--lh-h2-desktop);
+}
+
+.p1 {
+    font-family: var(--ff);
+    font-size: var(--fs-p-desk--fs-1-desktop);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-p-desktop);
+}
+
+.p2 {
+    font-family: var(--ff);
+    font-size: var(--fs-p-desktop);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-h1-desktop);
+}
+}
