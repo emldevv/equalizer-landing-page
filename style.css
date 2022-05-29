@@ -66,6 +66,22 @@ img {
     max-width: 100%;
 }
 
+.main__background-img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: -15em 13em;
+}
+
+.main__top-pattern {
+    display: none;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+}
+
 /* General typography */
 h1 {
     font-family: var(--ff);
@@ -99,6 +115,20 @@ h2 {
 
 
 @media (min-width: 600px) {
+    /* General styling */
+    .main__background-img {
+        /* width: 170%;
+        display: block;
+        position: absolute;
+        margin: -30em -38em; */
+    }
+    
+    .main__top-pattern {
+        display: block;
+        position: absolute;
+        margin-left: 50em;
+    }
+    
     /* General typography */
     h1 {
         font-family: var(--ff);
@@ -132,6 +162,15 @@ h2 {
 
 
 @media (min-width: 900px) {
+    /* General styling */
+    .main__background-img {
+        /* width: 150%;
+        display: block;
+        position: absolute;
+        margin: -20em -20em; */
+    }
+    
+    
     /* General typography */
 h1 {
     font-family: var(--ff);
