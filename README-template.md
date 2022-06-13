@@ -61,7 +61,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+More image learnings...
+Last project I learned about the difference between writing markup for images to account for resolution switching vs art direction. Now, things have changed again with a 3rd difference: Background images. I can either continue with the previous path, whcih would qualify for art direction, or use some best-practices for background image use in css rather than html. In this case the user does not require the BG img to understand the content, is not part of the content, and is not required for pritning by default. Therefore, using css to include the BG image makes sense and will allow for speedier upload times.
 
 To see how you can add code snippets, see below:
 

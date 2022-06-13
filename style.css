@@ -1,10 +1,14 @@
+/* To-do list
+_ I was up to adjusting the main header and header spacing
+
+*/
+
 /* Reset properties */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 body,
 main,
 h1, h2, h3,
@@ -12,7 +16,6 @@ p {
     margin: 0;
 }
 
-  
 /* Custom Properties */
   :root {
     
@@ -25,7 +28,6 @@ p {
     --fs-p-desktop: 2.0rem;
     --fs-p-tablet: 1.8rem;
     --fs-p-mobile: 1.6rem;
-
     --lh-h1-desktop: 8.8rem;                                 /* lh = line height */
     --lh-h1-tablet: 6.4rem;
     --lh-h1-mobile: 4.8rem;
@@ -35,18 +37,14 @@ p {
     --lh-p-desktop: 3.4rem;
     --lh-p-tablet: 2.8rem;
     --lh-p-mobile: 2.6rem;
-
     --ls-h1: -1px;                                  /* ls = letter spacing */
-
     --ff: 'IBM Plex Sans', sans-serif;
     --fw-r: 400;
     --fw-b: 700;
-
     
     --primary-clr-cy: #66E2DC;          /* Cyan - active iOS button*/
     --primary-clr-bo: #FA7453;          /* Burnt Orange - price card background*/
     --primary-clr-oy: #FFB964;          /* Orange Yellow - active android button */
-
     --secondary-clr-w: #FCFAF9;         /* white-ish - background, android button*/
     --secondary-clr-bk: #191826;        /* Black-ish - section backgroun, iOS button*/
   
@@ -58,32 +56,21 @@ p {
     --br: 5px;
     
   }
-
-
 /* General styles */
-
+body {
+    cursor: default;
+    position: relative;
+}
 img {
     max-width: 100%;
-}
-
-.main__background-img {
-    width: 100%;
-    display: block;
-    position: absolute;
-    margin: -15em 13em;
 }
 
 .main__top-pattern {
     display: none;
 }
-
 .content {
     position: absolute;
     z-index: 1;
-}
-
-.container {
-    padding: 3em 2.5em;
 }
 
 .btn {
@@ -108,7 +95,6 @@ h1 {
     line-height: var(--lh-h1-mobile);
     letter-spacing: var(--ls-h1);
 }
-
 h2 {
     font-family: var(--ff);
     font-size: var(--fs-2-mobile);
@@ -116,14 +102,12 @@ h2 {
     line-height: var(--lh-h2-mobile);
     color: var(--secondary-clr-w);
 }
-
 .p1 {
     font-family: var(--ff);
     font-size: var(--fs-p-mobile);
     font-weight: var(--fw-r);
     line-height: var(--lh-p-mobile);
 }
-
 .p2 {
     font-family: var(--ff);
     font-size: var(--fs-p-mobile);
@@ -132,8 +116,128 @@ h2 {
     color: var(--secondary-clr-w);
 }
 
-/* Header */
+@media (min-width: 600px) {
+    /* General typography */
+    h1 {
+        font-family: var(--ff);
+        font-size: var(--fs-1-tablet);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h1-tablet);
+        letter-spacing: var(--ls-h1);
+    }
+    h2 {
+        font-family: var(--ff);
+        font-size: var(--fs-2-tablet);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h2-tablet);
+    }
+    .p1 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-tablet);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-p-tablet);
+    }
+    .p2 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-tablet);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-p-tablet);
+    }
+}
 
+@media (min-width: 900px) {
+    /* General typography */
+    h1 {
+        font-family: var(--ff);
+        font-size: var(--fs-1-desktop);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h1-desktop);
+        letter-spacing: var(--ls-h1);
+    }
+    h2 {
+        font-family: var(--ff);
+        font-size: var(--fs-2-desk--fs-1-desktop);
+        font-weight: var(--fw-b);
+        line-height: var(--lh-h2-desktop);
+    }
+    .p1 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-desk--fs-1-desktop);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-p-desktop);
+    }
+    .p2 {
+        font-family: var(--ff);
+        font-size: var(--fs-p-desktop);
+        font-weight: var(--fw-r);
+        line-height: var(--lh-h1-desktop);
+    }
+}
+
+/* Containers */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 374px) {
+    .container {
+      width: 90%;
+    }
+}
+@media (min-width: 374px) {
+    .container {
+      width: 100%;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
+    }
+}
+  @media (min-width: 700px) {
+    .container {
+      width: 696px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+}
+  @media (min-width: 992px) {
+    .container {
+      width: 960rem;
+    }
+}
+  @media (min-width: 1200px) {
+    .container {
+      width: 1110rem;
+    }
+}
+
+/* Background */
+/* .main__background-img {
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: -15em 13em;
+} */
+.main__background-img {
+    position: absolute;
+    z-index: -1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/bg-main-mobile.png) 2rem -20.5rem no-repeat;
+}
+
+/* Header */
+header {
+    height: 7.2rem;
+    display: flex;
+    align-items: flex-end;
+}
+@media (min-width: 700px) {
+    .header__container {
+      height: 9.4rem;
+    }
+}
 
 /* Intro */
 .intro {
@@ -142,7 +246,6 @@ h2 {
 .intro__header {
     margin-bottom: .6em;
 }
-
 /* App illustration */
 .app-illustration {
     display: flex;
@@ -151,18 +254,15 @@ h2 {
     background-color: var(--secondary-clr-bk);
     border-radius: 1em;
 }
-
 .app-illustration__bg-pattern {
     width: 76%;
 }
-
 .app-img {
     width: 56%;
     display: block;
     position: absolute;
     margin: -9em 0em;
 }
-
 /* Action card section */
 .action-card {
     display: block;
@@ -170,6 +270,7 @@ h2 {
     margin: -4em 0;
     background-color: var(--primary-clr-bo);
     border-radius: 1em;
+    padding: 4em 3.5em;
     padding: 2.3em 3.5em 4em 3.5em;
 }
 
@@ -188,32 +289,26 @@ h2 {
 .action-card p {
     font-size: var(--fs-p-tablet);
 }
-
-
 .action-card span {
     font-size: var(--fs-1-tablet);
     line-height: var(--lh-h1-tablet);
     font-weight: var(--fw-b);
     margin: 0 1rem;
 }
-
 .action-card__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
 .action-card_ios-btn {
     background-color: var(--secondary-clr-bk);
     color: var(--secondary-clr-w);
 }
-
 .action-card_android-btn {
     background-color: var(--secondary-clr-w);
     color: var(--secondary-clr-bk);
 }
-
 .btn-icon {
     width: 1.2em;
     height: 1.5em;
@@ -227,11 +322,9 @@ h2 {
     margin-top: 47em;
     justify-self: center;
 }
-
 .footer-logo {
     margin-bottom: 3em;
 }
-
 .footer__email {
     text-decoration: none;
     font-family: var(--ff);
@@ -241,97 +334,8 @@ h2 {
     color: var(--secondary-clr-bk);
     margin-bottom: 3em;
 }
-
 .social-links {
     width: 30%;
     display: flex;
     justify-content: space-between;
-}
-
-@media (min-width: 600px) {
-    /* General styling */
-    /* .main__background-img {
-        width: 170%;
-        display: block;
-        position: absolute;
-        margin: -30em -38em;
-    }
-     */
-    .main__top-pattern {
-        display: block;
-        position: absolute;
-        margin-left: 50em;
-    }
-    
-    /* General typography */
-    h1 {
-        font-family: var(--ff);
-        font-size: var(--fs-1-tablet);
-        font-weight: var(--fw-b);
-        line-height: var(--lh-h1-tablet);
-        letter-spacing: var(--ls-h1);
-    }
-
-    h2 {
-        font-family: var(--ff);
-        font-size: var(--fs-2-tablet);
-        font-weight: var(--fw-b);
-        line-height: var(--lh-h2-tablet);
-    }
-
-    .p1 {
-        font-family: var(--ff);
-        font-size: var(--fs-p-tablet);
-        font-weight: var(--fw-r);
-        line-height: var(--lh-p-tablet);
-    }
-
-    .p2 {
-        font-family: var(--ff);
-        font-size: var(--fs-p-tablet);
-        font-weight: var(--fw-r);
-        line-height: var(--lh-p-tablet);
-    }
-}
-
-
-@media (min-width: 900px) {
-    /* General styling */
-    /* .main__background-img {
-        width: 150%;
-        display: block;
-        position: absolute;
-        margin: -20em -20em;
-    } */
-    
-    
-    /* General typography */
-h1 {
-    font-family: var(--ff);
-    font-size: var(--fs-1-desktop);
-    font-weight: var(--fw-b);
-    line-height: var(--lh-h1-desktop);
-    letter-spacing: var(--ls-h1);
-}
-
-h2 {
-    font-family: var(--ff);
-    font-size: var(--fs-2-desk--fs-1-desktop);
-    font-weight: var(--fw-b);
-    line-height: var(--lh-h2-desktop);
-}
-
-.p1 {
-    font-family: var(--ff);
-    font-size: var(--fs-p-desk--fs-1-desktop);
-    font-weight: var(--fw-r);
-    line-height: var(--lh-p-desktop);
-}
-
-.p2 {
-    font-family: var(--ff);
-    font-size: var(--fs-p-desktop);
-    font-weight: var(--fw-r);
-    line-height: var(--lh-h1-desktop);
-}
 }
