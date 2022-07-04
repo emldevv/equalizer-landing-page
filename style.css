@@ -315,16 +315,25 @@ h2 {
 /* I have chosen to make footer__container margin-top the margin that positions the footer. This doesn't need to be the case because you can use the content wrapper. The tablet and desktop versions may influence the final element margin decision */
 .footer__container {
     margin-top: 38rem;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
     height: 16.4rem;
     display: flex;
     flex-direction: column;
 }
 .footer span {
+    font-family: var(--ff);
     font-size: var(--fs-p-mobile);
+    line-height: var(--lh-p-mobile);
 }
 .social-links {
     display: flex;
-    conte: flex-start;
     list-style: none;
+    padding-left: 0;
+}
+.email {
+    color: var(--secondary-clr-bk);
+    text-decoration: none;
+}
+.footer__li + .footer__li {
+    margin-left: 2rem;
 }
