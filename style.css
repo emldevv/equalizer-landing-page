@@ -19,6 +19,7 @@ p {
     --fs-1-tablet: 6.4rem;
     --fs-1-mobile: 4.0rem;
     --fs-2-desktop: 4.0rem;
+    --fs-2-tablet: 3.2rem;
     --fs-2-mobile: 3.2rem;
     --fs-p-desktop: 2.0rem;
     --fs-p-tablet: 1.8rem;
@@ -186,7 +187,8 @@ h2 {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(./assets/bg-pattern-1.svg) 50rem -4.2rem no-repeat, url(./assets/bg-main-tablet.png) -38rem -25.5rem no-repeat;
+        background: url(./assets/bg-pattern-1.svg) calc(100% + 0px) -4.2rem no-repeat, 
+            url(./assets/bg-main-tablet.png) -38rem -25.5rem no-repeat;
         background-size: 266px, auto;
     }
 }
@@ -198,7 +200,8 @@ h2 {
         left: 0;
         width: 100%;
         height: 100%;
-        background: url(./assets/bg-main-desktop.png) 2rem -20.5rem no-repeat;
+        background: url(./assets/bg-pattern-1.svg) calc(100% + 0px) -4.2rem no-repeat,
+            url(./assets/bg-main-desktop.png) -35rem -20.5rem no-repeat;
     }
 }
 
@@ -258,7 +261,6 @@ h2 {
     background: url(assets/bg-pattern-2.svg) no-repeat
         var(--secondary-clr-bk); /* DON'T use "background-image", just "background"*/
     background-size: auto 70%;
-    background-position: center top;
     position: relative;
     height: 60rem;
     margin-top: 16.6rem;
@@ -269,9 +271,16 @@ h2 {
     background-position-x: center;
     background-position-y: top;
 }
-@media (min-width: 600px) {
+@media (min-width: 448px) {
     .content__wrapper {
+        background: url(assets/bg-pattern-2.svg) no-repeat
+        var(--secondary-clr-bk);
+        background-size: auto 70%;
+        /* background-position: center top; */
+        background-position-x: 22.6rem;
+        background-position-y: -3rem;
         margin-top: 26.6rem;
+        margin-bottom: 18.7rem;
     }
 }
 .app-illustration {
@@ -280,9 +289,11 @@ h2 {
     top: -10.5rem;
     left: 7%;
 }
-@media (min-width: 600px) {
+@media (min-width: 448px) {
     .app-illustration {
         max-width: 27rem;
+        top: -15rem;
+        left: 3.5%;
     }
 }
 .app-img {
@@ -296,6 +307,17 @@ h2 {
     position: absolute;
     border-radius: 1.2rem;
     padding: 4.8rem 3.5rem;
+}
+@media (min-width: 448px) {
+    .action-card {
+        max-width: 400px;
+        position: absolute;
+        top: 15rem;
+        right: 6rem;
+    }
+}
+.action-card__header {
+    margin-bottom: 1rem;
 }
 .action-card__price span {
     font-family: var(--ff);
@@ -313,7 +335,7 @@ h2 {
     color: var(--secondary-clr-w);
     display: flex;
     align-items: center;
-    margin: 4.8rem 0 0 1rem;
+    margin: 4rem 0 0 1rem;
 }
 .action-card_ios-btn {
     background-color: var(--secondary-clr-bk);
@@ -341,20 +363,39 @@ h2 {
 /* I have chosen to make footer__container margin-top the margin that positions the footer. This doesn't need to be the case because you can use the content wrapper. The tablet and desktop versions may influence the final element margin decision */
 .footer__container {
     margin-top: 38rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     height: 16.4rem;
     display: flex;
     flex-direction: column;
+}
+@media (min-width: 448px) {
+    .footer__container {
+        margin-top: 0;
+        margin-bottom: 4rem;
+        height: 16.4rem;
+    }
 }
 .footer span {
     font-family: var(--ff);
     font-size: var(--fs-p-mobile);
     line-height: var(--lh-p-mobile);
 }
+@media (min-width: 448px) {
+    .footer span {
+        max-width: 400px;
+    }
+}
 .social-links {
     display: flex;
     list-style: none;
     padding-left: 0;
+}
+@media (min-width: 600px) {
+    .social-links {
+        position: absolute;
+        right: 3rem;
+        bottom: 6rem;
+    }
 }
 .email {
     color: var(--secondary-clr-bk);
