@@ -224,7 +224,7 @@ h2 {
         margin: 0 auto;
     }
 }
-@media (min-wdith:1100) {
+@media (min-width: 1100px) {
     .container {
         width: 77%;
     }
@@ -256,6 +256,17 @@ h2 {
         width: 73%;
     }
 }
+@media (min-width: 1100px) {
+    .hero-intro {
+        padding-top: 10.4rem;
+    }
+    .intro__header {
+        width: 90%     
+    }
+    .intro__para {
+        width: 80%;
+    }
+}
 /* Content/eq section */
 .content__wrapper {
     background: url(assets/bg-pattern-2.svg) no-repeat
@@ -276,8 +287,18 @@ h2 {
         background: url(assets/bg-pattern-2.svg) no-repeat
         var(--secondary-clr-bk);
         background-size: auto 70%;
-        /* background-position: center top; */
         background-position-x: 22.6rem;
+        background-position-y: -3rem;
+        margin-top: 26.6rem;
+        margin-bottom: 18.7rem;
+    }
+}
+@media (min-width: 1100px) {
+    .content__wrapper {
+        background: url(assets/bg-pattern-2.svg) no-repeat
+        var(--secondary-clr-bk);
+        background-size: auto 70%;
+        background-position-x: 30rem;
         background-position-y: -3rem;
         margin-top: 26.6rem;
         margin-bottom: 18.7rem;
@@ -292,6 +313,13 @@ h2 {
 @media (min-width: 448px) {
     .app-illustration {
         max-width: 27rem;
+        top: -15rem;
+        left: 3.5%;
+    }
+}
+@media (min-width: 1100px) {
+    .app-illustration {
+        max-width: 31.2rem;
         top: -15rem;
         left: 3.5%;
     }
@@ -314,6 +342,14 @@ h2 {
         position: absolute;
         top: 15rem;
         right: 6rem;
+    }
+}
+@media (min-width: 1100px) {
+    .action-card {
+        max-width: 446px;
+        position: absolute;
+        top: 9rem;
+        right: 9rem;
     }
 }
 .action-card__header {
