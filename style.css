@@ -165,7 +165,7 @@ h2 {
         font-family: var(--ff);
         font-size: var(--fs-p-desktop);
         font-weight: var(--fw-r);
-        line-height: var(--lh-h1-desktop);
+        line-height: var(--lh-p-desktop);
     }
 }
 
@@ -226,7 +226,7 @@ h2 {
 }
 @media (min-width: 1100px) {
     .container {
-        width: 77%;
+        width: 80%;
     }
 }
 
@@ -298,7 +298,7 @@ h2 {
         background: url(assets/bg-pattern-2.svg) no-repeat
         var(--secondary-clr-bk);
         background-size: auto 70%;
-        background-position-x: 30rem;
+        background-position-x: 34.7rem;
         background-position-y: -3rem;
         margin-top: 26.6rem;
         margin-bottom: 18.7rem;
@@ -321,7 +321,7 @@ h2 {
     .app-illustration {
         max-width: 31.2rem;
         top: -15rem;
-        left: 3.5%;
+        left: 6%;
     }
 }
 .app-img {
