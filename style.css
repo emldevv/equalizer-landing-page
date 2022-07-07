@@ -84,6 +84,10 @@ img {
     margin: .4em;
     padding: 1em 0;
 }
+.btn:hover {
+    transform: scale(1.02);
+}
+.btn:
 /* General typography */
 h1 {
     font-family: var(--ff);
