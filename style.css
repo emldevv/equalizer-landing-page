@@ -15,7 +15,7 @@ p {
   :root {
     
     font-size: 10px;
-    --fs-1-desktop: 8.8rem;                                 /* fs = font size */
+    --fs-1-desktop: 8.8rem;             /* fs = font size */
     --fs-1-tablet: 6.4rem;
     --fs-1-mobile: 4.0rem;
     --fs-2-desktop: 4.0rem;
@@ -25,7 +25,7 @@ p {
     --fs-p-tablet: 1.8rem;
     --fs-p-mobile: 1.6rem;
     --fs-p2-mobile: 1.8rem;
-    --lh-h1-desktop: 8.8rem;                                 /* lh = line height */
+    --lh-h1-desktop: 8.8rem;            /* lh = line height */
     --lh-h1-tablet: 6.4rem;
     --lh-h1-mobile: 4.8rem;
     --lh-h2-desktop: 5.2rem;
@@ -34,7 +34,7 @@ p {
     --lh-p-desktop: 3.4rem;
     --lh-p-tablet: 2.8rem;
     --lh-p-mobile: 2.6rem;
-    --ls-h1: -1px;                                  /* ls = letter spacing */
+    --ls-h1: -1px;                      /* ls = letter spacing */
     --ff: 'IBM Plex Sans', sans-serif;
     --fw-l: 300;
     --fw-r: 400;
@@ -44,7 +44,7 @@ p {
     --primary-clr-bo: #FA7453;          /* Burnt Orange - price card background*/
     --primary-clr-oy: #FFB964;          /* Orange Yellow - active android button */
     --secondary-clr-w: #FCFAF9;         /* white-ish - background, android button*/
-    --secondary-clr-bk: #191826;        /* Black-ish - section backgroun, iOS button*/
+    --secondary-clr-bk: #191826;        /* Black-ish - section background, iOS button*/
   
     --spacer: 1rem;
     --spacer-md: calc(var(--spacer) * 2);
@@ -87,7 +87,7 @@ img {
 .btn:hover {
     transform: scale(1.02);
 }
-.btn:
+
 /* General typography */
 h1 {
     font-family: var(--ff);
@@ -274,7 +274,7 @@ h2 {
 /* Content/eq section */
 .content__wrapper {
     background: url(assets/bg-pattern-2.svg) no-repeat
-        var(--secondary-clr-bk); /* DON'T use "background-image", just "background"*/
+        var(--secondary-clr-bk);
     background-size: auto 70%;
     position: relative;
     height: 60rem;
@@ -393,10 +393,16 @@ h2 {
     color: var(--secondary-clr-w);
     margin: 3rem 0 1.6rem 0;
 }
+.action-card_ios-btn:focus {
+    background-color: var(--primary-clr-cy);
+}
 .action-card_android-btn {
     background-color: var(--secondary-clr-w);
     color: var(--secondary-clr-bk);
     margin: 0;
+}
+.action-card_android-btn:focus {
+    background-color: var(--primary-clr-oy);
 }
 .btn-icon {
     width: 2rem;
@@ -411,7 +417,6 @@ h2 {
 }
  
 /* Footer */
-/* I have chosen to make footer__container margin-top the margin that positions the footer. This doesn't need to be the case because you can use the content wrapper. The tablet and desktop versions may influence the final element margin decision */
 .footer__container {
     margin-top: 38rem;
     margin-bottom: 10rem;
